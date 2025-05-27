@@ -1,6 +1,6 @@
 {
 	"packageName": "SML Basics Filter Package",
-	"authors": "David H.",
+	"authors": "CSSLab RWTH Aachen University",
 	"desc": "A collection of multiple Filters to visualize some basic code structures of the SML programming language.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [

@@ -1,6 +1,6 @@
 {
 	"packageName": "C Include Filter",
-	"authors": "David H.",
+	"authors": "CSSLab RWTH Aachen University",
 	"desc": "This is a simple filter listing all included modules of a file in the C language.",
 	"date": "2024-05-27T15:14:44.257Z",
 	"nodeFilterList": [

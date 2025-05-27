@@ -1,6 +1,6 @@
 {
 	"packageName": "Java Class Extension Filter",
-	"authors": "David H.",
+	"authors": "CSSLab RWTH Aachen University",
 	"desc": "A simple filter to visualize class extensions in Java.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [

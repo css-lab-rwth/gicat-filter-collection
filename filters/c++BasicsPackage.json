@@ -1,6 +1,6 @@
 {
 	"packageName": "C++ Basics Filter Package",
-	"authors": "David H.",
+	"authors": "CSSLab RWTH Aachen University",
 	"desc": "A collection of multiple Filters to visualize some basic code structures of the C++ programming language. This filter works for file with the .cpp ending. If your files use a different ending, adjust the extension attribute accordingly.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [

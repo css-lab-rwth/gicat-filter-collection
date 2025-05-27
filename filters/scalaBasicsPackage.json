@@ -1,7 +1,7 @@
 {
-	"packageName": "SML Basics Filter Package",
-	"authors": "David H.",
-	"desc": "A collection of multiple Filters of the scala programming language.",
+	"packageName": "Scala Basics Filter Package",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A collection of multiple Filters to visualize some basic code structures of the Scala programming language.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [
 		{
