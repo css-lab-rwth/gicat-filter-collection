@@ -10,5 +10,4 @@ You can then import the filter files inside GICAT to start analyzing some code.
 
 Feel free to discuss and expand our collection with your own generated filters.\
 To do so, just clone our Repository and create a [Pull request](https://github.com/css-lab-rwth/gicat-filter-collection/pulls) with your proposed filter files.\
-Remember to follow our **_template filter file_** to keep our filters uniform.\
 If you have any problems or suggestions, please use this Repository's [Issue](https://github.com/css-lab-rwth/gicat-filter-collection/issues) list.
