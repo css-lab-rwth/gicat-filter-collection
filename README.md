@@ -4,5 +4,8 @@ Here you can find a pre written filter file collection for our [GICAT](https://g
 To download, press the green _<> Code_ Button and download the library as a zip file.
 You can then import the filter files inside GICAT to start analyzing some code.
 
+
+![Download our Filter Collection](https://github.com/user-attachments/assets/f0355b8a-c03d-49ad-a8a0-b34a233afae5)
+
 Feel free to discuss and expand our collection with your own generated filters.
 If you have any problems or suggestions, please use this Repositories [Issue](https://github.com/css-lab-rwth/gicat-filter-collection/issues) list.
