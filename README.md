@@ -10,4 +10,5 @@ You can then import the filter files inside GICAT to start analyzing some code.
 
 Feel free to discuss and expand our collection with your own generated filters.\
 To do so, just clone our Repository and create a [Pull request](https://github.com/css-lab-rwth/gicat-filter-collection/pulls) with your proposed filter files.\
+To learn more about Pull requests, click [here](https://docs.github.com/en/pull-requests).\
 If you have any problems or suggestions, please use this Repository's [Issue](https://github.com/css-lab-rwth/gicat-filter-collection/issues) list.
