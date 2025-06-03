@@ -6,7 +6,7 @@
 	"nodeFilterList": [
 		{
 			"name": "Subroutine Filter",
-			"regex": "/.*\\ssubroutine\\s(.+\\s?)\\(/gm",
+			"regex": "/.*\\ssubroutine\\s*(.+\\s?)\\(/gm",
 			"id": "subroutineFilter",
 			"spec": "node",
 			"exclude": [
