@@ -1,0 +1,75 @@
+{
+	"packageName": "Fortran Subroutine Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A collection of multiple Filters to visualize some basic code structures of the Fortran programming language.",
+	"date": "2025-03-06T16:22:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Subroutine Node Filter",
+			"regex": "/^\\s*SUBROUTINE\\s+([aA-zZ]+)/gmi",
+			"id": "subroutineFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f",
+			"attributes": {
+				"subroutine": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Subroutine",
+			"labelAttribute": "subroutine"
+		},
+        {
+			"name": "Subroutine Calls Node Filter",
+			"regex": "/^\\s*CALL\\s+([aA-zZ]+)/gmi",
+			"id": "subroutineCallsFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f",
+			"attributes": {
+				"calls": [
+					1
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "Call",
+			"labelAttribute": "calls"
+		}
+	],
+	"edgeFilterList": [
+        {
+			"allow-loop": true,
+			"mode": "contains",
+			"label": "called by",
+			"spec": "edge",
+			"name": "Subroutine Calls Edge Filter",
+			"id": "subroutineCallsEdgeFilter",
+            "from": {
+				"nodeFilterID": "subroutineCallsFilter",
+				"attribute": "calls"
+			},
+            "to": {
+				"nodeFilterID": "subroutineFilter",
+				"attribute": "subroutine"
+			},
+			"style": {
+				"color": "#BA33E2"
+			}
+		}
+	]
+}
