@@ -1,0 +1,33 @@
+{
+	"packageName": "Fortran90 Recursion Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A node filter to visualize recursive function definitions for the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Recursive Function Node Filter",
+			"regex": "/recursive\\sfunction\\s(\\w+)\\s?\\(/gm",
+			"id": "recursiveFuntionFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"recursive": [
+					1
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "Recursive",
+			"labelAttribute": "recursive"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

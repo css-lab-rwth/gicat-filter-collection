@@ -1,0 +1,33 @@
+{
+	"packageName": "C# Class Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A node filter to visualize class definitions in the C# programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Class Node Filter",
+			"regex": "/class\\s+(\\S+)\\s*\\(/gm",
+			"id": "classFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cs",
+			"attributes": {
+				"className": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Class",
+			"labelAttribute": "className"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

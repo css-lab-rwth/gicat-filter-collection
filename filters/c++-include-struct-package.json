@@ -1,11 +1,11 @@
 {
-	"packageName": "C++ Basics Filter Package",
+	"packageName": "C++ Include and Structure Filter Package",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A collection of multiple Filters to visualize some basic code structures of the C++ programming language. This filter works for file with the .cpp ending. If your files use a different ending, adjust the extension attribute accordingly.",
+	"desc": "A filter package of two node filter files to visualize includes and structure definition of the C++ programming language. This filter works for file with the .cpp ending. If your files use a different ending, adjust the extension attribute accordingly.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [
 		{
-			"name": "Include Filter",
+			"name": "Include Node Filter",
 			"regex": "/#include\\s(\\S+)\\s*\\n*/gm",
 			"id": "includeFilter",
 			"spec": "node",
@@ -26,7 +26,7 @@
 			"labelAttribute": "includeName"
 		},
 		{
-			"name": "Structure Filter",
+			"name": "Structure Node Filter",
 			"regex": "/struct (\\S+)\\s*\\n*/gm",
 			"id": "structureFilter",
 			"spec": "node",

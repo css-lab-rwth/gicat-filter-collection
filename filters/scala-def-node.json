@@ -1,0 +1,36 @@
+{
+	"packageName": "Scala Definitions Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "This filter aims to visualize Definitions in the Scala programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Definition Node Filter",
+			"regex": "/def\\s(\\w+):\\s(\\w+)\\s?=/gm",
+			"id": "definitionFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".scala",
+			"attributes": {
+				"definition": [
+					1
+				],
+                "type": [
+                    2
+                ]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "def",
+			"labelAttribute": "definition"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

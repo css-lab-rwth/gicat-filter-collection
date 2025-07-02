@@ -1,11 +1,11 @@
 {
-	"packageName": "Basic Python filter package",
+	"packageName": "Python Class Inheritance Filter package",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A collection of multiple Filters to visualize some basic code structures of the Python programming language.",
+	"desc": "This filter package aims to visualize the class inheritance of Python Classes. It therefore uses a Class Node Filter which is looking to visualize all class definitions as nodes. It also contains an Edge Filter which draws edges between the child class (source) to its parent class (target).",
 	"date": "2024-01-31T16:44:59.958Z",
 	"nodeFilterList": [
 		{
-			"name": "Class Filter Python",
+			"name": "Class Node Filter",
 			"regex": "/class ([A-Za-z]+)\\(?(.*)\\)?\\:/gm",
 			"id": "classFilterPython",
 			"spec": "node",
@@ -26,29 +26,6 @@
 			],
 			"label": "Class",
 			"labelAttribute": "className"
-		},
-		{
-			"name": "Import Filter Python",
-			"regex": "/(?:from ([\\w\\d]*) )?(?:import) ([\\w\\d]*(?:, [\\w\\d]*)*)/gm",
-			"id": "importFilterPython",
-			"spec": "node",
-			"extension": ".py",
-			"attributes": {
-				"from": [
-					1
-				],
-				"import": [
-					2
-				]
-			},
-			"style": {
-				"color": "#F76262"
-			},
-			"failures": [
-				""
-			],
-			"label": "Import",
-			"labelAttribute": "import"
 		}
 	],
 	"edgeFilterList": [
@@ -57,7 +34,7 @@
 			"mode": "contains",
 			"label": "extends",
 			"spec": "edge",
-			"name": "Class-Edge Filter Python",
+			"name": "Class Edge Filter",
 			"id": "class-EdgeFilterPython",
 			"from": {
 				"nodeFilterID": "classFilterPython",

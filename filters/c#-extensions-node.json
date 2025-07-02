@@ -1,0 +1,33 @@
+{
+	"packageName": "C# Extensions Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A node filter to visualize all used extensions in the C# programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+        {
+			"name": "Extensions Node Filter",
+			"regex": "/using\\s(\\S+)\\s*;/gm",
+			"id": "extensionsFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".cs",
+			"attributes": {
+				"extensionName": [
+					1
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "Using",
+			"labelAttribute": "extensionName"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

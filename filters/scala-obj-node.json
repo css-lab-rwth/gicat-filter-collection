@@ -1,0 +1,33 @@
+{
+	"packageName": "Scala Objects Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "This filter aims to visualize object definitions in the Scala programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Object Node Filter",
+			"regex": "/object\\s?(\\w+)/gm",
+			"id": "objectFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".scala",
+			"attributes": {
+				"object": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Object",
+			"labelAttribute": "object"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

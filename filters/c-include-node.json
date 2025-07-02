@@ -1,11 +1,11 @@
 {
-	"packageName": "C Include Filter",
+	"packageName": "C Include Node Filter",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "This is a simple filter listing all included modules of a file in the C language.",
+	"desc": "This is a simple node filter listing all included modules of a file in the C programming language.",
 	"date": "2024-05-27T15:14:44.257Z",
 	"nodeFilterList": [
 		{
-			"name": "C Include Filter",
+			"name": "C Include Node Filter",
 			"regex": "/\\#include\\s(.*)/gm",
 			"id": "Cincludefilter",
 			"spec": "node",

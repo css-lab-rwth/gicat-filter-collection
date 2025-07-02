@@ -1,0 +1,33 @@
+{
+	"packageName": "Fortran90 Subroutine Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A node filter to visualize subroutine calls in the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Subroutine Node Filter",
+			"regex": "/.*\\ssubroutine\\s*(.+\\s?)\\(/gm",
+			"id": "subroutineFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"subroutine": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Subroutine",
+			"labelAttribute": "subroutine"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

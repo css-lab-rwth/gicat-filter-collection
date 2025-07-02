@@ -1,0 +1,33 @@
+{
+	"packageName": "SML Signature Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A signature node filter for the SML programming language. This filter aims to find all signature definitions and represents them as nodes.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Signature Node Filter",
+			"regex": "/signature\\s(\\w+)/gm",
+			"id": "signatureFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".sig",
+			"attributes": {
+				"signature": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Signature",
+			"labelAttribute": "signature"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"packageName": "Python Module Import Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "This filter aims to visualize the module imports in the python programming language.",
+	"date": "2024-01-31T16:44:59.958Z",
+	"nodeFilterList": [
+		{
+			"name": "Import Node Filter",
+			"regex": "/(?:from ([\\w\\d]*) )?(?:import) ([\\w\\d]*(?:, [\\w\\d]*)*)/gm",
+			"id": "importFilterPython",
+			"spec": "node",
+			"extension": ".py",
+			"attributes": {
+				"from": [
+					1
+				],
+				"import": [
+					2
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "Import",
+			"labelAttribute": "import"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

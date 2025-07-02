@@ -1,0 +1,33 @@
+{
+	"packageName": "SML Structure Node Filter",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A Structure Node Filter for the SML programming language. This filter aims to find all Structure definitions and represents them as nodes.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Structure Node Filter",
+			"regex": "/structure\\s(\\w+)\\s:>\\s.*\\s?=/gm",
+			"id": "structureFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".sml",
+			"attributes": {
+				"structure": [
+					1
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "Structure",
+			"labelAttribute": "structure"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

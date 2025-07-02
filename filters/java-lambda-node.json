@@ -1,11 +1,11 @@
 {
-	"packageName": "Java Lambda Filter",
+	"packageName": "Java Lambda Node Filter",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A simple filter for filtering lambda expressions in Java.",
+	"desc": "A simple node filter for filtering Lambda expressions in Java.",
 	"date": "2024-05-27T15:14:44.257Z",
 	"nodeFilterList": [
 		{
-			"name": "Lambda Filter",
+			"name": "Lambda Node Filter",
 			"regex": "/(\\([\\w\\d,\\s]*\\))\\s->/gm",
 			"id": "lambdafilter",
 			"spec": "node",

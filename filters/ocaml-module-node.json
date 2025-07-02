@@ -1,11 +1,11 @@
 {
-	"packageName": "OCaml Basics Filter Package",
+	"packageName": "OCaml Module Node Filter",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A collection of multiple Filters to visualize some basic code structures of the OCaml programming language.",
+	"desc": "This node filter aims to visualize module imports for the OCaml programming language.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [
 		{
-			"name": "Module import Filter",
+			"name": "Module Import Node Filter",
 			"regex": "/module\\s(\\S+)\\s*=\\s*(\\S+)/gm",
 			"id": "moduleimportFilter",
 			"spec": "node",

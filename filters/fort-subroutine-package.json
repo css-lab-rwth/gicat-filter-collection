@@ -1,7 +1,7 @@
 {
-	"packageName": "Fortran Subroutine Filter",
+	"packageName": "Fortran Subroutine Filter Package",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A collection of multiple Filters to visualize some basic code structures of the Fortran programming language.",
+	"desc": "A collection of multiple filters to visualize subroutine and their calls in the Fortran programming language.",
 	"date": "2025-03-06T16:22:44.257Z",
 	"nodeFilterList": [
 		{

@@ -1,11 +1,11 @@
 {
-	"packageName": "Java Class Extension Filter",
+	"packageName": "Java Class Extension Filter Package",
 	"authors": "CSSLab RWTH Aachen University",
-	"desc": "A simple filter to visualize class extensions in Java.",
+	"desc": "A filter package to visualize class extensions in the Java programming language.",
 	"date": "2024-09-02T15:14:44.257Z",
 	"nodeFilterList": [
 		{
-			"name": "Java Class Extension Filter",
+			"name": "Java Class Extension Node Filter",
 			"regex": "/(?<!\\*[\\w\\s]*)class\\s(\\w+)(\\sextends\\s(\\w+))?\\s?/gm",
 			"id": "javaClassExtensionFilter",
 			"spec": "node",
