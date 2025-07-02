@@ -1,0 +1,82 @@
+{
+	"packageName": "R Function Node Package",
+	"authors": "CSSLab RWTH Aachen University",
+	"desc": "A node filter package to visualize different function definitions in the R programming language.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Function Node Filter",
+			"regex": "/(\\w+)\\s*<-\\s*function\\s*\\(([^)]*)\\)/gm",
+			"id": "functionNodeFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".R",
+			"attributes": {
+				"functionName": [
+					1
+				],
+				"parameters": [
+					2
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Function",
+			"labelAttribute": "functionName"
+		},
+        {
+			"name": "Apply Family Node Filter",
+			"regex": "/([mslvt]?apply)\\s*\\(/gm",
+			"id": "applyFamilyNodeFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".R",
+			"attributes": {
+				"family": [
+					1
+				]
+			},
+			"style": {
+				"color": "#FC7355"
+			},
+			"failures": [
+				""
+			],
+			"label": "Family",
+			"labelAttribute": "family"
+		},
+        {
+			"name": "Plot Alias Node Filter",
+			"regex": "/(plot|ggplot|hist|barplot|boxplot)\\s*\\(/gm",
+			"id": "plotAliasNodeFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".R",
+			"attributes": {
+				"plot": [
+					1
+				]
+			},
+			"style": {
+				"color": "#DAF7A6"
+			},
+			"failures": [
+				""
+			],
+			"label": "Plot",
+			"labelAttribute": ""
+		}
+	],
+	"edgeFilterList": [
+	]
+}
