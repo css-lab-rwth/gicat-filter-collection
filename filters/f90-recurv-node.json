@@ -6,7 +6,7 @@
 	"nodeFilterList": [
 		{
 			"name": "Recursive Function Node Filter",
-			"regex": "/recursive\\sfunction\\s(\\w+)\\s?\\(/gm",
+			"regex": "/recursive\\sfunction\\s(\\w+)\\s?\\(/gmi",
 			"id": "recursiveFuntionFilter",
 			"spec": "node",
 			"exclude": [

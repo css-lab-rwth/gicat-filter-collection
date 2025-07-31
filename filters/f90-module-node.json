@@ -1,0 +1,75 @@
+{
+	"packageName": "Fortran90 Module Filter",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A filter package to visualize module definitions and module usage for the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+				{
+			"name": "Module Node Filter",
+			"regex": "/^\\s*\\s*module\\s+(?!procedure)(\\w+)/gmi",
+			"id": "moduleFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"module": [
+					1
+				]
+			},
+			"style": {
+				"color": "#7AE35F"
+			},
+			"failures": [
+				""
+			],
+			"label": "Module",
+			"labelAttribute": "module"
+		},
+        				{
+			"name": "Use Node Filter",
+			"regex": "/^\\s*\\s*use\\s+(\\w+)/gmi",
+			"id": "useFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"use": [
+					1
+				]
+			},
+			"style": {
+				"color": "#FF87E6"
+			},
+			"failures": [
+				""
+			],
+			"label": "Use Module",
+			"labelAttribute": "use"
+		}
+	],
+	"edgeFilterList": [
+        		{
+			"allow-loop": true,
+			"mode": "contains",
+			"label": "uses",
+			"spec": "edge",
+			"name": "Module Use Edge Filter",
+			"id": "moduleUseEdgeFilter",
+			"from": {
+				"nodeFilterID": "useFilter",
+				"attribute": "use"
+			},
+			"to": {
+                "nodeFilterID": "moduleFilter",
+                "attribute": "module"
+            },
+            "style":{
+                "color": "#F76262"
+        	}
+		}
+	]
+}

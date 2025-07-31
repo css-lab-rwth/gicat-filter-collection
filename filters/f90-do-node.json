@@ -1,0 +1,33 @@
+{
+	"packageName": "Fortran90 Do Loop Filter",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A filter package to visualize do-loops for the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+				{
+			"name": "Do-Loop Node Filter",
+			"regex": "/^\\s*do\\s(.+)/gmi",
+			"id": "doFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"do": [
+					1
+				]
+			},
+			"style": {
+				"color": "#7AE35F"
+			},
+			"failures": [
+				""
+			],
+			"label": "DO",
+			"labelAttribute": "do"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

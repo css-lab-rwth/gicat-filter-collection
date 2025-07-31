@@ -1,0 +1,33 @@
+{
+	"packageName": "Fortran90 If Node Filter",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A filter package to visualize if conditions for the Fortran90 programming language. These filters however might work for different Fortran versions without any guarantees.",
+	"date": "2024-09-02T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "If Conditions Node Filter",
+			"regex": "/^\\s*(?:else\\s+)?if\\s*(\\(.+\\))/gmi",
+			"id": "ifFilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".f90",
+			"attributes": {
+				"if": [
+					1
+				]
+			},
+			"style": {
+				"color": "#F76262"
+			},
+			"failures": [
+				""
+			],
+			"label": "IF",
+			"labelAttribute": "if"
+		}
+	],
+	"edgeFilterList": [
+	]
+}
