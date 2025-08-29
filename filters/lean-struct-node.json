@@ -1,6 +1,6 @@
 {
 	"packageName": "Lean Structure Node Filter",
-	"authors": "CSSLab RWTH Aachen University",
+	"authors": "CSS-Lab RWTH Aachen University",
 	"desc": "A node filter to visualize structure definitions in the Lean programming language.",
 	"date": "2024-01-31T16:44:59.958Z",
 	"nodeFilterList": [

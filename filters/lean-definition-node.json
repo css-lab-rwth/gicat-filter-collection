@@ -1,0 +1,79 @@
+{
+	"packageName": "Lean Definitions Node Filter Package",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A simple node filter package for filtering definitions in the Lean programming language such as Theorems.",
+	"date": "2024-05-27T15:14:44.257Z",
+	"nodeFilterList": [
+		{
+			"name": "Definition Node Filter",
+			"regex": "(def\\s+([^\\s\\\\]+)/gm",
+			"id": "definitionfilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".lean",
+			"attributes": {
+				"Definition": [
+					1
+				]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [
+				""
+			],
+			"label": "Def",
+			"labelAttribute": "Definition"
+		},
+				{
+			"name": "Lemma Node Filter",
+			"regex": "(lemma\\s+([^\\s\\\\]+)/gm",
+			"id": "lemmafilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".lean",
+			"attributes": {
+				"Lemma": [
+					1
+				]
+			},
+			"style": {
+				"color": "#25E652"
+			},
+			"failures": [
+				""
+			],
+			"label": "Lemma",
+			"labelAttribute": "Lemma"
+		},
+						{
+			"name": "Theorem Node Filter",
+			"regex": "(theorem\\s+([^\\s\\\\]+)/gm",
+			"id": "theoremfilter",
+			"spec": "node",
+			"exclude": [
+				""
+			],
+			"extension": ".lean",
+			"attributes": {
+				"Theorem": [
+					1
+				]
+			},
+			"style": {
+				"color": "#D1A538"
+			},
+			"failures": [
+				""
+			],
+			"label": "Theorem",
+			"labelAttribute": "Theorem"
+		}
+		
+	],
+	"edgeFilterList": []
+}

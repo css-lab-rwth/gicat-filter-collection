@@ -1,0 +1,27 @@
+{
+	"packageName": "Lean If Condition Node Filter",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A node filter to visualize if conditions in the Lean programming language. REMINDER: Since RegEx is not context aware, it cannot filter out all comments.",
+	"date": "2024-01-31T16:44:59.958Z",
+	"nodeFilterList": [
+		{
+			"name": "If Condition Node Filter",
+			"regex": "/\\bif\\b\\s+([^\\n]+?)\\s+\\bthen\\b/gm",
+			"id": "ifCondFilter",
+			"spec": "node",
+			"exclude": [""],
+			"extension": ".lean",
+			"attributes": {
+				"if": [1]
+			},
+			"style": {
+				"color": "#6461F9"
+			},
+			"failures": [""],
+			"label": "If",
+			"labelAttribute": "if"
+		}
+	],
+	"edgeFilterList": [
+	]
+}

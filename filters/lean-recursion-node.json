@@ -1,0 +1,27 @@
+{
+	"packageName": "Lean Recursion Node Filter",
+	"authors": "CSS-Lab RWTH Aachen University",
+	"desc": "A node filter to visualize recursions in the Lean programming language.",
+	"date": "2024-01-31T16:44:59.958Z",
+	"nodeFilterList": [
+		{
+			"name": "Recrusion Node Filter",
+			"regex": "/def\\s+(\\w+)[^:=]*:=([\\s\\S]*?)\\b\\1\\b/gm",
+			"id": "recusionFilter",
+			"spec": "node",
+			"exclude": [""],
+			"extension": ".lean",
+			"attributes": {
+				"recursion": [1]
+			},
+			"style": {
+				"color": "#FF7373"
+			},
+			"failures": [""],
+			"label": "Recursion",
+			"labelAttribute": "recursion"
+		}
+	],
+	"edgeFilterList": [
+	]
+}
