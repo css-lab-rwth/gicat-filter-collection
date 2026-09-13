@@ -34,7 +34,7 @@
 	"edgeFilterList": [
 		{
 			"allow-loop": true,
-			"mode": "contains",
+			"mode": "strict",
 			"label": "extends",
 			"spec": "edge",
 			"name": "Class Extension Edge Filter Java",

@@ -6,9 +6,14 @@
 	"nodeFilterList": [
 		{
 			"name": "Class Node Filter",
-			"regex": "/class ([A-Za-z]+)\\(?(.*)\\)?\\:/gm",
+			"regex": "/^\\s*class\\s+([A-Za-z_]\\w*)\\s*(?:\\(([^)]*)\\))?\\s*:/gm",
 			"id": "classFilterPython",
 			"spec": "node",
+			"exclude": [
+				"/\"\"\"[\\s\\S]*?\"\"\"/gm",
+				"/'''[\\s\\S]*?'''/gm",
+				"/#.*$/gm"
+			],
 			"extension": ".py",
 			"attributes": {
 				"className": [
@@ -31,7 +36,7 @@
 	"edgeFilterList": [
 		{
 			"allow-loop": true,
-			"mode": "contains",
+			"mode": "strict",
 			"label": "extends",
 			"spec": "edge",
 			"name": "Class Edge Filter",

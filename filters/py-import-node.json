@@ -9,6 +9,11 @@
 			"regex": "/(?:from ([\\w\\d]*) )?(?:import) ([\\w\\d]*(?:, [\\w\\d]*)*)/gm",
 			"id": "importFilterPython",
 			"spec": "node",
+			"exclude": [
+				"/\"\"\"[\\s\\S]*?\"\"\"/gm",
+				"/'''[\\s\\S]*?'''/gm",
+				"/#.*$/gm"
+			],
 			"extension": ".py",
 			"attributes": {
 				"from": [
