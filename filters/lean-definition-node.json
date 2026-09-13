@@ -6,7 +6,7 @@
 	"nodeFilterList": [
 		{
 			"name": "Definition Node Filter",
-			"regex": "(def\\s+([^\\s\\\\]+)/gm",
+			"regex": "/def\\s+([^\\s\\\\]+)/gm",
 			"id": "definitionfilter",
 			"spec": "node",
 			"exclude": [
@@ -29,7 +29,7 @@
 		},
 				{
 			"name": "Lemma Node Filter",
-			"regex": "(lemma\\s+([^\\s\\\\]+)/gm",
+			"regex": "/lemma\\s+([^\\s\\\\]+)/gm",
 			"id": "lemmafilter",
 			"spec": "node",
 			"exclude": [
@@ -52,7 +52,7 @@
 		},
 						{
 			"name": "Theorem Node Filter",
-			"regex": "(theorem\\s+([^\\s\\\\]+)/gm",
+			"regex": "/theorem\\s+([^\\s\\\\]+)/gm",
 			"id": "theoremfilter",
 			"spec": "node",
 			"exclude": [

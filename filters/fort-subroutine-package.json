@@ -6,7 +6,7 @@
 	"nodeFilterList": [
 		{
 			"name": "Subroutine Node Filter",
-			"regex": "/^\\s*SUBROUTINE\\s+([aA-zZ]+)/gmi",
+			"regex": "/^\\s*SUBROUTINE\\s+([A-Za-z]\\w*)/gmi",
 			"id": "subroutineFilter",
 			"spec": "node",
 			"exclude": [
@@ -29,7 +29,7 @@
 		},
         {
 			"name": "Subroutine Calls Node Filter",
-			"regex": "/^\\s*CALL\\s+([aA-zZ]+)/gmi",
+			"regex": "/^\\s*CALL\\s+([A-Za-z]\\w*)/gmi",
 			"id": "subroutineCallsFilter",
 			"spec": "node",
 			"exclude": [
@@ -54,7 +54,8 @@
 	"edgeFilterList": [
         {
 			"allow-loop": true,
-			"mode": "contains",
+			"mode": "strict",
+			"caseInsensitive": true,
 			"label": "called by",
 			"spec": "edge",
 			"name": "Subroutine Calls Edge Filter",

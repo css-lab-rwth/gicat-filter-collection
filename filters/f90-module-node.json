@@ -54,7 +54,8 @@
 	"edgeFilterList": [
         		{
 			"allow-loop": true,
-			"mode": "contains",
+			"mode": "strict",
+			"caseInsensitive": true,
 			"label": "uses",
 			"spec": "edge",
 			"name": "Module Use Edge Filter",
